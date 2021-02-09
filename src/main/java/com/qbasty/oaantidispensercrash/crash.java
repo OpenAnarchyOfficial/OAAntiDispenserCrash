@@ -13,5 +13,8 @@ public class crash implements Listener {
         if (blockHeight >= 255) {
             e.setCancelled(true);
         }
+        if (blockHeight <= 0) {
+            e.setCancelled(true);
+        }
     }
 }
